@@ -4,6 +4,7 @@
         <NavContainer @upNavId="getNavId"></NavContainer>
         <Note v-if="navId == 1" :navId="navId"></Note>
         <Table1 v-if="navId == 2 || navId == 3"></Table1>
+        <Table2 v-if="navId == 4"></Table2>
     </div>
 </template>
 
@@ -13,6 +14,7 @@ import Topbar from './topbar.vue'
 import NavContainer from './nav.vue'
 import Note from './../template/note.vue'
 import Table1 from './../template/table.vue'
+import Table2 from './../template/table2.vue'
 
 export default {
 
@@ -20,7 +22,8 @@ export default {
         'Topbar': Topbar,
         'NavContainer':NavContainer,
         'Note':Note,
-        'Table1':Table1
+        'Table1':Table1,
+        'Table2':Table2
     },
 
     data () {
@@ -83,5 +86,9 @@ export default {
             padding-top:10px;
             padding-bottom:30px;
         }
+    }
+    .editBtnContainer{
+        height:50px;
+        line-height: 50px;
     }
 </style>
