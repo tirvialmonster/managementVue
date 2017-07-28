@@ -39,3 +39,8 @@ this.$http.post('url',{
 ### 说明
 - 表格中的编辑确定按钮，并未书写相关逻辑
 - 纯属于本人的个人总结，逻辑并没有非常完善
+
+### 展示
+![](./imglogin.jpg)
+![](./imgtable1.jpg)
+![](./imgtable2.jpg)
